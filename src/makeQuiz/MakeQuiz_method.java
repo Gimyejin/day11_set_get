@@ -6,8 +6,8 @@ import java.util.Scanner;
 public class MakeQuiz_method {
 	private ArrayList<String> tvChannel = new ArrayList<>();
 	Scanner input = new Scanner(System.in);
-	int num;
-	int tv;
+	private int num;
+	private int tv;
 
 	public void setTvchannel() {
 		tvChannel.add("스포츠 채널");
@@ -23,7 +23,7 @@ public class MakeQuiz_method {
 		tvChannel.add("mbc");
 	}
 
-	public void putIn() {
+	public void getTvChannel() {
 		System.out.println("사용 설명서: 1~11번 채널 \t 12번: + , 13번: -");
 		while (true) {
 			System.out.print("리모콘 ");
@@ -35,7 +35,7 @@ public class MakeQuiz_method {
 		}
 	}
 
-	// num =11 tv =11일때 문제가남
+	
 	public void whatChannel() {
 		if (num == 0) {
 			System.out.println("tv를 종료합니다");
